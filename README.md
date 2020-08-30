@@ -21,12 +21,14 @@
 - type of request: **POST**
 - body: _id:Number
 - finds item by id and then deletes that item from database(list).
+- if no todo exists with given id, list remains unchanged.
 
 
 ### - /update
 - type of request: **PATCH**
 - body: _id:Number, todo: String
 - searches for the todo item based on id and updates it with the new todo item string.
+- if no todo exists with the given id, list remains unchanged.
 
 ### - /list
 - type of request: **GET**
