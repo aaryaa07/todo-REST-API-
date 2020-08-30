@@ -13,23 +13,23 @@
 
 ## routes
 ### - /create
-- type of request: post
+- type of request: **POST**
 - body: _id:Number, todo: String
 - creates a new todo item and saves to database
 
 ### - /delete
-- type of request: post
+- type of request: **POST**
 - body: _id:Number
 - finds item by id and then deletes that item from database(list).
 
 
 ### - /update
-- type of request: patch
+- type of request: **PATCH**
 - body: _id:Number, todo: String
 - searches for the todo item based on id and updates it with the new todo item string.
 
 ### - /list
-- type of request: get
+- type of request: **GET**
 - lists all items present in the todo list
 
 
