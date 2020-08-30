@@ -32,8 +32,8 @@ app.post("/delete",function(req,res){
         {
             if(foundItem)
             {
-                console.log("deleted");
-                res.send("deleted");
+                
+                res.send("check list content");
             }
             else
             {
@@ -53,7 +53,7 @@ app.patch("/update",function(req,res){
     var id=req.body.id;
     Todo.updateOne({_id:id},{$set:{todo:req.body.todo}},function(err){
         if(!err){
-            res.send("updated");
+            res.send("check list content");
         }
         else{
             res.send(err);
